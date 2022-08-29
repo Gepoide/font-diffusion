@@ -23,7 +23,7 @@ let fontNames = [];
 let opacity = 0;
 let count, status;
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(window.innerWidth, window.innerHeight);
   noCursor();
 
   fixtureUltraMedium = loadFont(font1);
@@ -125,6 +125,6 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(window.innerWidth, window.innerHeight);
   background(0, 0, 255);
 }
